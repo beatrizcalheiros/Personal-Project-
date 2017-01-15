@@ -1,0 +1,386 @@
+@import "reset";
+@import "variables";
+
+
+body{
+  padding: 3%;
+  background: #F2EFEB;
+
+
+}
+
+section{
+  width: 17%;
+  float: left;
+
+
+
+h1{
+  font-family: $font-stacking;
+  font-size: 24pt;
+  line-height: 30pt;
+  position: fixed;
+  top: 10%;
+  font-weight: normal;
+}
+
+ul{
+  position: fixed;
+  margin-top: 8em;
+    li{
+      font-family: $font-stacking;
+      font-size: 18pt;
+      padding-top: 1.5em;
+      font-weight: normal;
+    }
+}
+}
+
+
+
+/* formatação do menu + da div pieces onde o js é activado e aparece o contéudo*/
+#content {
+    width:848px;
+    position:absolute;
+}
+#SideNav {
+    width:169px;
+    float:left;
+}
+#pieces {
+  width: 100%;
+  top: 0px;
+  /* left: 260px; */
+  padding-left: 25%;
+  float: left;
+  /* position: relative; */
+  margin-left: 3em;
+}
+.panel {
+
+    margin-top: 8em;
+    display: none;
+    position:absolute;
+    top: 0px;
+    /*right: 0px;*/
+    /*easier to see on fiddle*/
+    border: 2px solid red;
+}
+
+/*secção #pieces .about */
+
+#panel1{
+  border: none;
+  width: 100%;
+  p{
+   	 padding: %;
+     font-family: $font-stacking;
+     font-size: 14pt;
+     font-weight: normal;
+     line-height: 20pt;
+     text-align: justify;
+
+  }
+
+  img{
+    padding: 3% white;
+    margin-right: 3em;
+    margin-bottom: 3em;
+    width: 45%;
+    height: auto;
+    float: left;
+  }
+}
+
+/* secçao imagens */
+#panel2{
+  border: none;
+  padding-left: 0;
+  width: 100%;
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap:   3px;
+  -moz-column-count:    3;
+  -moz-column-gap:      3px;
+  column-count:         4;
+  column-gap:           3px;
+
+  img{
+    margin-bottom: 30px;
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    padding: 7px;
+
+  }
+
+
+}
+
+
+#work{
+
+  width: 100%;
+  padding-left: 30%;
+  padding-top: 12%;
+  float: left;
+  margin-left: 3em;
+  border: none;
+  padding-left: 0;
+  width: 100%;
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap:   3px;
+  -moz-column-count:    3;
+  -moz-column-gap:      3px;
+  column-count:         4;
+  column-gap:           3px;
+
+  img{
+    margin-bottom: 30px;
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    padding: 7px;
+
+  }
+
+
+
+}
+
+
+
+#panel3{
+  border: none;
+  width: 100%;
+  padding-top: 5%;
+  h2{
+    padding-right: 3em;
+    padding-bottom: 1em;
+    font-family: $font-stacking;
+    font-size: 20pt;
+
+  }
+  p {
+     font-family: $font-stacking;
+     font-size: 14pt;
+     font-weight: normal;
+     line-height: 20pt;
+     text-align: justify;
+     padding-bottom: 3em;
+
+  }
+
+  img{
+    padding-right: 3%;
+    display: inline-block;
+  	width: 5%;
+    height: auto;
+    padding-top: 1.5em;
+  }
+}
+
+
+
+
+
+a:link{
+	text-decoration: none;
+
+}
+
+ a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+ a:hover{
+	text-decoration: line-through;
+	text-decoration-line: line-through 2px;
+		-webkit-transition: width 2s, height 4s; /* Safari */
+	 transition: width 2s, height 4s;
+}
+
+
+/* Portrait and Landscape */
+
+
+
+
+@media only screen and (max-width: 500px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  body{
+    padding: 3%;
+
+    }
+
+   section{
+      width: 100%;
+
+
+    h1{
+      float: left;
+      padding-top: 2.5%;
+      font-family: $font-stacking;
+      font-size: 12pt;
+      line-height: normal;
+      position: relative;
+      top: 2%;
+      font-weight: normal;
+    }
+
+    ul{
+      position: relative;
+      margin-top: 0;
+      display: inline-block;
+      padding-left: 20%;
+      float: left;
+
+        li{
+          padding-left: 2%;
+          font-family: $font-stacking;
+          font-size: 12pt;
+          padding-top: 1.5em;
+          font-weight: normal;
+          display: inline-block;
+        }
+    }
+    }
+
+
+    #content {
+        width:320px;
+        position:absolute;
+    }
+    #SideNav {
+        width:100vh;
+        float:none;
+    }
+    #pieces {
+      padding-right: 0;
+      margin-right: 0;
+      width: 80%;
+      top: 0px;
+      float: none;
+     position: relative;
+     margin-left: 0;
+padding-left: 0;
+    }
+
+/*about section*/
+    #panel1{
+      padding-left: 6%;
+      border: none;
+
+      p{
+       	 width: 100%;
+         font-family: $font-stacking;
+         font-size: 8pt;
+         font-weight: thin;
+         line-height: 16pt;
+         text-align: justify;
+
+      }
+
+      img{
+        margin-bottom: 1em;
+        width: 100%;
+        float: none;
+      }
+    }
+
+    #panel3{
+      padding-left: 0.5em;
+
+      h2{
+        padding-right: 0;
+        font-size: 14pt;
+
+      }
+      p {
+
+         font-family: $font-stacking;
+         font-size: 12pt;
+      }
+
+      img{
+        padding-right: 0;
+        padding-left: 0.5em;
+      	width: 10%;
+        padding-top: 2em;
+      }
+    }
+
+    #work{
+      margin-left: 0;
+      padding-left: 0;
+      padding-top: 20%;
+      line-height: 0;
+      -webkit-column-count: 2;
+      -webkit-column-gap:   2px;
+      -moz-column-count:    2;
+      -moz-column-gap:      2px;
+      column-count:         2;
+      column-gap:           2px;
+
+}
+
+}
+
+@media only screen and (width: 414px){
+
+  #content {
+      width:414px;
+      position:absolute;
+  }
+
+section{
+
+ul{
+
+
+li{
+  padding-left: 0;
+}
+}
+}
+
+  #work{
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 20%;
+    line-height: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   2px;
+    -moz-column-count:    2;
+    -moz-column-gap:      2px;
+    column-count:         3;
+    column-gap:           2px;
+  }
+}
+
+
+@media only screen and (width: 375px){
+
+  #content {
+      width:375px;
+      position:absolute;
+  }
+
+  #panel2{
+
+    width: 100%;
+    padding-left: 0.5em;
+    line-height: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   3px;
+    -moz-column-count:    3;
+    -moz-column-gap:      3px;
+    column-count:         3;
+    column-gap:           3px;
+
+
+}
+
+}
